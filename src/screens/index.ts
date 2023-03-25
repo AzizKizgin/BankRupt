@@ -1,0 +1,10 @@
+export {default as Account} from './Account';
+export {default as AddCart} from './AddCart';
+export {default as Excange} from './Excange';
+export {default as Home} from './Home';
+export {default as Login} from './Login';
+export {default as Payment} from './Payment';
+export {default as QrCode} from './QrCode';
+export {default as SignUp} from './SignUp';
+export {default as Transaction} from './Transaction';
+export {default as TransactionHistory} from './TransactionHistory';

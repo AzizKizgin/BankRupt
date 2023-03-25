@@ -4,8 +4,13 @@ import {NavigationContainer} from '@react-navigation/native';
 import Main from './src/navigations/Main';
 
 const App = () => {
+  const config = {
+    dependencies: {
+      'linear-gradient': require('react-native-linear-gradient').default,
+    },
+  };
   return (
-    <NativeBaseProvider>
+    <NativeBaseProvider config={config}>
       <NavigationContainer>
         <Main />
       </NavigationContainer>

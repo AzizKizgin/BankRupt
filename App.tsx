@@ -2,6 +2,7 @@ import React from 'react';
 import {Box, NativeBaseProvider, Text} from 'native-base';
 import {NavigationContainer} from '@react-navigation/native';
 import Main from './src/navigations/Main';
+import theme from './src/theme/theme';
 
 const App = () => {
   const config = {
@@ -10,7 +11,7 @@ const App = () => {
     },
   };
   return (
-    <NativeBaseProvider config={config}>
+    <NativeBaseProvider config={config} theme={theme}>
       <NavigationContainer>
         <Main />
       </NavigationContainer>

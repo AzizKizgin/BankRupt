@@ -1,7 +1,6 @@
 import React from 'react';
-import {Box, Text} from 'native-base';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {Login, SignUp} from '../screens';
+import {ForgetPassword, Login, SignUp} from '../screens';
 
 const Authentication = () => {
   const Stack = createNativeStackNavigator();
@@ -13,8 +12,13 @@ const Authentication = () => {
         options={{headerShown: false}}
       />
       <Stack.Screen
-        name="Register"
+        name="SignUp"
         component={SignUp}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="ForgetPassword"
+        component={ForgetPassword}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

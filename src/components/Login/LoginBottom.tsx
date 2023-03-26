@@ -17,12 +17,12 @@ const LoginBottom = () => {
   return (
     <Center>
       <Pressable onPress={navigateToForgetPassword}>
-        <Text color={'cyan.500'} underline={true} fontSize={14}>
+        <Text color={'cyan.600'} underline={true} fontSize={14}>
           {strings.forgetPassword}
         </Text>
       </Pressable>
       <Pressable onPress={navigateToSignUp}>
-        <Text color={'cyan.500'} underline={true} marginTop={1}>
+        <Text color={'cyan.600'} underline={true} marginTop={1}>
           {strings.createAccount}
         </Text>
       </Pressable>

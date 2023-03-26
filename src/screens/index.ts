@@ -8,3 +8,4 @@ export {default as QrCode} from './QrCode';
 export {default as SignUp} from './SignUp';
 export {default as Transaction} from './Transaction';
 export {default as TransactionHistory} from './TransactionHistory';
+export {default as ForgetPassword} from './ForgetPassword';

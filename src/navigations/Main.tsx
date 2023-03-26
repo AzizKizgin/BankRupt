@@ -10,7 +10,8 @@ const Main = () => {
     <Stack.Navigator
       screenOptions={{
         headerShown: false,
-      }}>
+      }}
+      initialRouteName="Authentication">
       <Stack.Screen name="Drawer" component={Drawer} />
       <Stack.Screen
         name="Authentication"

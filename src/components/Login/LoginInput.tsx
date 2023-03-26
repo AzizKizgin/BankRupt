@@ -25,7 +25,7 @@ const LoginInput: FC<LoginInputProps> = (props) => {
           secureTextEntry={true}
           keyboardType="number-pad"
         />
-        <Button onPress={() => {}} />
+        <Button onPress={() => {}} title="Login" />
       </VStack>
     </Box>
   );

@@ -3,9 +3,10 @@ import {Box, Pressable, Text} from 'native-base';
 
 interface ButtonProps {
   onPress: () => void;
+  title: string;
 }
 const Button: FC<ButtonProps> = (props) => {
-  const {onPress} = props;
+  const {onPress, title} = props;
   return (
     <Pressable onPress={onPress}>
       <Box
@@ -23,7 +24,7 @@ const Button: FC<ButtonProps> = (props) => {
           },
         }}>
         <Text color="white" fontSize="sm">
-          Login
+          {title}
         </Text>
       </Box>
     </Pressable>

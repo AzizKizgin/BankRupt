@@ -17,17 +17,7 @@ const ForgetPassword = () => {
   };
   return (
     <Box flex={1} backgroundColor="white">
-      <Box
-        alignItems="center"
-        justifyContent="center"
-        height={200}
-        bg={{
-          linearGradient: {
-            colors: ['darkBlue.900', 'darkBlue.800'],
-            start: [0, 0],
-            end: [0, 1],
-          },
-        }}>
+      <Box variant={'screenTop'} height={200}>
         <Image
           source={require('../assets/images/resetPassword.png')}
           alt="logo"

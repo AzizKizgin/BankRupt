@@ -23,6 +23,21 @@ const theme = extendTheme({
         },
       },
     },
+    Box: {
+      variants: {
+        screenTop: {
+          alignItems: 'center',
+          justifyContent: 'center',
+          bg: {
+            linearGradient: {
+              colors: ['darkBlue.900', 'darkBlue.800'],
+              start: [0, 0],
+              end: [0, 1],
+            },
+          },
+        },
+      },
+    },
   },
 });
 

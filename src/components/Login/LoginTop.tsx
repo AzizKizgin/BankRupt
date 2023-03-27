@@ -4,17 +4,7 @@ import {strings} from '../../utils/strings';
 
 const LoginTop = () => {
   return (
-    <Box
-      h="400"
-      alignItems="center"
-      justifyContent="space-evenly"
-      bg={{
-        linearGradient: {
-          colors: ['darkBlue.900', 'darkBlue.800'],
-          start: [0, 0],
-          end: [0, 1],
-        },
-      }}>
+    <Box variant={'screenTop'} h="400" justifyContent="space-evenly">
       <Text fontSize="3xl" color="white">
         {strings.welcome}
       </Text>

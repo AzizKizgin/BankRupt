@@ -3,3 +3,8 @@ type AuthenticationParamList = {
   SignUp: undefined;
   ForgetPassword: undefined;
 };
+
+type AppParamList = {
+  Authentication: undefined;
+  App: undefined;
+};

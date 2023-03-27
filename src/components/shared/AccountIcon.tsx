@@ -29,7 +29,7 @@ const AccountIcon: FC<AccountIconProps> = (props) => {
           end: [0, 1],
         },
       }}>
-      <Icon as={Ionicons} name="person" size="55" color="gray.200" />
+      <Icon as={Ionicons} name="person" size="16" color="gray.200" />
     </Center>
   );
 };

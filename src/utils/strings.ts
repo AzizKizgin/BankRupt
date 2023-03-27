@@ -4,4 +4,5 @@ export const strings = {
   createAccount: 'Create Account',
   passwordMustBeAtLeast: 'Password must be at least 8 characters',
   agreeToTerms: 'I agree to the terms and conditions',
+  sendResetLink: 'Send Password Reset Link',
 };

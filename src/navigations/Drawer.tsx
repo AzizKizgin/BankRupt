@@ -20,6 +20,7 @@ const Drawer = () => {
     <Drawer.Navigator
       drawerContent={(props) => <AppDrawer {...props} />}
       screenOptions={({route}) => ({
+        headerTintColor: 'white',
         drawerActiveTintColor: 'white',
         drawerActiveBackgroundColor: theme.colors.darkBlue[700],
         drawerInactiveTintColor: 'white',
@@ -30,6 +31,18 @@ const Drawer = () => {
           borderBottomRightRadius: 20,
           marginRight: 10,
         },
+        headerStyle: {
+          backgroundColor: theme.colors.darkBlue[900],
+        },
+        headerRight: () => (
+          <Icon
+            as={Ionicons}
+            name="settings-outline"
+            size={21}
+            color="white"
+            mr={3}
+          />
+        ),
         drawerIcon: ({focused, color}) => {
           let iconName;
           switch (route.name) {

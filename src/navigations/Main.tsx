@@ -12,7 +12,7 @@ const Main = () => {
         headerShown: false,
       }}
       initialRouteName="Authentication">
-      <Stack.Screen name="Drawer" component={Drawer} />
+      <Stack.Screen name="App" component={Drawer} />
       <Stack.Screen
         name="Authentication"
         component={Authentication}

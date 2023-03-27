@@ -33,12 +33,15 @@ const Drawer = () => {
         },
         headerStyle: {
           backgroundColor: theme.colors.darkBlue[900],
+          elevation: 0,
+          shadowOpacity: 0,
+          borderBottomWidth: 0,
         },
         headerRight: () => (
           <Icon
             as={Ionicons}
             name="settings-outline"
-            size={21}
+            size={6}
             color="white"
             mr={3}
           />

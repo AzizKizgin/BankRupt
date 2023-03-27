@@ -5,7 +5,10 @@ import {ForgetPassword, Login, SignUp} from '../screens';
 const Authentication = () => {
   const Stack = createNativeStackNavigator();
   return (
-    <Stack.Navigator>
+    <Stack.Navigator
+      screenOptions={{
+        animation: 'slide_from_right',
+      }}>
       <Stack.Screen
         name="Login"
         component={Login}

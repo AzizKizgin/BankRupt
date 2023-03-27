@@ -15,6 +15,10 @@ const LoginInput: FC<LoginInputProps> = (props) => {
   const navigation = useNavigation<NativeStackNavigationProp<AppParamList>>();
   const onPress = () => {
     navigation.navigate('App');
+    navigation.reset({
+      index: 0,
+      routes: [{name: 'App'}],
+    });
   };
   return (
     <Box alignItems="center" paddingY={12}>

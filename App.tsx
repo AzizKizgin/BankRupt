@@ -3,6 +3,7 @@ import {Box, NativeBaseProvider, Text} from 'native-base';
 import {NavigationContainer} from '@react-navigation/native';
 import Main from './src/navigations/Main';
 import theme from './src/theme/theme';
+import {ToastMessageProvider} from '@aziz_kizgin/react-native-toast-message';
 
 const App = () => {
   const config = {
@@ -12,9 +13,11 @@ const App = () => {
   };
   return (
     <NativeBaseProvider config={config} theme={theme}>
-      <NavigationContainer>
-        <Main />
-      </NavigationContainer>
+      <ToastMessageProvider>
+        <NavigationContainer>
+          <Main />
+        </NavigationContainer>
+      </ToastMessageProvider>
     </NativeBaseProvider>
   );
 };

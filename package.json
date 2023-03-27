@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@aziz_kizgin/react-native-checkbox": "^1.0.1",
+    "@aziz_kizgin/react-native-toast-message": "^1.0.4",
     "@react-navigation/drawer": "^6.6.2",
     "@react-navigation/native": "^6.1.6",
     "@react-navigation/native-stack": "^6.9.12",

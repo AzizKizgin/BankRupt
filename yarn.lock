@@ -17,6 +17,14 @@
   dependencies:
     typescript "^4.9.5"
 
+"@aziz_kizgin/react-native-toast-message@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@aziz_kizgin/react-native-toast-message/-/react-native-toast-message-1.0.4.tgz#b802aa6a72125f40a5a0fe6cfc3517953d29e790"
+  integrity sha512-neXB0REqWovjDBbig6R+tbRG5mIWmxYHNxdZtfsecxv1IZnxCwpQfuUHcQjuHnx/SB58PfRffDU0X0wXa6nLmA==
+  dependencies:
+    react-native-reanimated "^3.0.0"
+    typescript "^4.9.5"
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.18.6":
   version "7.18.6"
   resolved "https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.18.6.tgz"
@@ -7074,7 +7082,7 @@ react-native-linear-gradient@^2.6.2:
   resolved "https://registry.npmjs.org/react-native-linear-gradient/-/react-native-linear-gradient-2.6.2.tgz"
   integrity sha512-Z8Xxvupsex+9BBFoSYS87bilNPWcRfRsGC0cpJk72Nxb5p2nEkGSBv73xZbEHnW2mUFvP+huYxrVvjZkr/gRjQ==
 
-react-native-reanimated@^3.0.2:
+react-native-reanimated@^3.0.0, react-native-reanimated@^3.0.2:
   version "3.0.2"
   resolved "https://registry.npmjs.org/react-native-reanimated/-/react-native-reanimated-3.0.2.tgz"
   integrity sha512-8Et90yTI9yxchGbDP79k391XZqc/64zNbASbGy8X3Vgv4EbZ1M3IkKwcIbZmbVwpA804VJ6V9nJAGUh9fP0LrA==

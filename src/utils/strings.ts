@@ -7,4 +7,6 @@ export const strings = {
   sendResetLink: 'Send Password Reset Link',
   latestTransactions: 'Latest Transactions',
   more: 'more >>',
+  byAddingCard:
+    '* By adding a card, you agree to our Terms of Service and Privacy Policy',
 };

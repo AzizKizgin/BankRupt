@@ -15,3 +15,14 @@ type Transaction = {
   amount: string;
   type: number;
 };
+
+type MainParamList = {
+  Home: undefined;
+  Account: undefined;
+  AddCard: undefined;
+  QRCode: undefined;
+  Transaction: undefined;
+  'Transaction History': undefined;
+  Payment: undefined;
+  Exchange: undefined;
+};

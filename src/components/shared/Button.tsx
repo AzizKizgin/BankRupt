@@ -1,17 +1,19 @@
 import React, {FC} from 'react';
-import {Box, Pressable, Text} from 'native-base';
+import {Box, IBoxProps, Pressable, Text} from 'native-base';
 
 interface ButtonProps {
   onPress: () => void;
   title: string;
+  style?: IBoxProps;
 }
 const Button: FC<ButtonProps> = (props) => {
-  const {onPress, title} = props;
+  const {onPress, title, style} = props;
   return (
     <Pressable onPress={onPress}>
       <Box
+        {...style}
         alignSelf="center"
-        width={24}
+        width={'32'}
         height={9}
         borderRadius={5}
         alignItems="center"

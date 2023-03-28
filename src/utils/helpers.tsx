@@ -1,3 +1,9 @@
+import notifee, {
+  AndroidCategory,
+  AndroidImportance,
+} from '@notifee/react-native';
+import {theme} from 'native-base';
+
 export const transactionType = (
   type: number,
 ): {
@@ -32,3 +38,28 @@ export const transactionType = (
       };
   }
 };
+
+export async function sendTransactionNotification(
+  title: string,
+  message: string,
+) {
+  const channelId = await notifee.createChannel({
+    id: 'default',
+    name: 'Default Channel',
+  });
+
+  await notifee.displayNotification({
+    title: title,
+    body: message,
+    android: {
+      channelId,
+      category: AndroidCategory.CALL,
+      importance: AndroidImportance.HIGH,
+      fullScreenAction: {
+        id: 'default',
+      },
+      color: theme.colors.darkBlue[900],
+      smallIcon: 'ic_launcher',
+    },
+  });
+}

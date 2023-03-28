@@ -8,6 +8,7 @@ interface AccountIconProps {
     startColor: string;
     endColor: string;
   };
+  color?: string;
 }
 const AccountIcon: FC<AccountIconProps> = (props) => {
   const {
@@ -16,6 +17,7 @@ const AccountIcon: FC<AccountIconProps> = (props) => {
       startColor: 'white',
       endColor: 'white',
     },
+    color = 'gray.200',
   } = props;
   return (
     <Center
@@ -29,7 +31,7 @@ const AccountIcon: FC<AccountIconProps> = (props) => {
           end: [0, 1],
         },
       }}>
-      <Icon as={Ionicons} name="person" size="16" color="gray.200" />
+      <Icon as={Ionicons} name="person" size="16" color={color} />
     </Center>
   );
 };

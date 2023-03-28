@@ -22,15 +22,6 @@ const LatestTransactions = () => {
       {transactions.map((transaction: Transaction, index) => (
         <TransactionItem key={index} transaction={transaction} />
       ))}
-      <Text
-        onPress={onMorePress}
-        textAlign="right"
-        color="cyan.600"
-        fontSize="sm"
-        marginTop={6}
-        alignSelf="flex-end">
-        {strings.more}
-      </Text>
     </Box>
   );
 };

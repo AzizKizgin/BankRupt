@@ -72,3 +72,60 @@ export const fakeData = [
     type: 3,
   },
 ];
+
+export const categories = [
+  {
+    id: 1,
+    title: 'Water',
+    icon: 'water',
+    color: 'blue',
+  },
+  {
+    id: 2,
+    title: 'Electricity',
+    icon: 'lightbulb',
+    color: 'orange',
+  },
+  {
+    id: 3,
+    title: 'Gas',
+    icon: 'fire',
+    color: 'purple',
+  },
+  {
+    id: 4,
+    title: 'Shopping',
+    icon: 'shopping',
+    color: 'red',
+  },
+  {
+    id: 5,
+    title: 'Phone',
+    icon: 'cellphone',
+    color: 'green',
+  },
+  {
+    id: 6,
+    title: 'Credit Card',
+    icon: 'credit-card',
+    color: 'pink',
+  },
+  {
+    id: 7,
+    title: 'Internet',
+    icon: 'wifi',
+    color: 'blueGray',
+  },
+  {
+    id: 8,
+    title: 'Mortgage',
+    icon: 'home',
+    color: 'cyan',
+  },
+  {
+    id: 9,
+    title: 'Transport',
+    icon: 'airplane',
+    color: 'yellow',
+  },
+];

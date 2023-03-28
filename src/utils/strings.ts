@@ -6,4 +6,5 @@ export const strings = {
   agreeToTerms: 'I agree to the terms and conditions',
   sendResetLink: 'Send Password Reset Link',
   latestTransactions: 'Latest Transactions',
+  more: 'more >>',
 };

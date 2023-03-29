@@ -5,6 +5,7 @@ type AuthenticationParamList = {
 };
 
 type AppParamList = {
+  SplashScreen: undefined;
   Authentication: undefined;
   App: undefined;
 };

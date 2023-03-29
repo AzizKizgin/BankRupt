@@ -3,6 +3,7 @@ import {Box, Text} from 'native-base';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Authentication from './Authentication';
 import Drawer from './Drawer';
+import {SplashScreen} from '../screens';
 
 const Main = () => {
   const Stack = createNativeStackNavigator();
@@ -11,7 +12,8 @@ const Main = () => {
       screenOptions={{
         headerShown: false,
       }}
-      initialRouteName="Authentication">
+      initialRouteName="SplashScreen">
+      <Stack.Screen name="SplashScreen" component={SplashScreen} />
       <Stack.Screen name="App" component={Drawer} />
       <Stack.Screen
         name="Authentication"

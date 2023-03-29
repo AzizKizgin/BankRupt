@@ -1,5 +1,6 @@
 import React from 'react';
 import {Box, Text} from 'native-base';
+import {screenWidth} from '../../utils/consts';
 
 const MoneyIcon = () => {
   return (
@@ -8,7 +9,7 @@ const MoneyIcon = () => {
       borderColor="darkBlue.900"
       alignItems="center"
       justifyContent="center"
-      width={200}
+      width={screenWidth / 2}
       height={100}>
       <Box width={50} height={50} bg="darkBlue.900" rounded="full" />
       <Box

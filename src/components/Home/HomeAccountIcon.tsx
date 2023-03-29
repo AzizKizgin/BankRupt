@@ -1,12 +1,13 @@
 import React from 'react';
 import {Box, Icon, Text} from 'native-base';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import {screenWidth} from '../../utils/consts';
 
 const HomeAccountIcon = () => {
   return (
     <Box
-      width={125}
-      height={125}
+      width={screenWidth / 3}
+      height={screenWidth / 3}
       rounded={'full'}
       backgroundColor={'white'}
       alignItems={'center'}

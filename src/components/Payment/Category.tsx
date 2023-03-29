@@ -1,6 +1,7 @@
 import React, {FC} from 'react';
 import {Box, Center, Icon, Text} from 'native-base';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import {screenWidth} from '../../utils/consts';
 
 interface CategoryProps {
   title: string;
@@ -14,8 +15,8 @@ const Category: FC<CategoryProps> = (props) => {
   return (
     <Center marginX={2} marginY={6}>
       <Box
-        height={100}
-        width={100}
+        height={screenWidth / 4}
+        width={screenWidth / 4}
         rounded="full"
         bg={{
           linearGradient: {

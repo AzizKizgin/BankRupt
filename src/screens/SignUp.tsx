@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Box, Input, Text, VStack} from 'native-base';
+import {Box, Input, ScrollView, Text, VStack} from 'native-base';
 import SignUpTop from '../components/SignUp/SignUpTop';
 import {CheckBox} from '@aziz_kizgin/react-native-checkbox';
 import Button from '../components/shared/Button';
@@ -15,25 +15,27 @@ const SignUp = () => {
   const [agreeToTerms, setAgreeToTerms] = useState(false);
   return (
     <Box flex={1} backgroundColor="white">
-      <SignUpTop />
-      <Box alignItems="center" paddingY={12}>
-        <SignUpInputs
-          username={username}
-          setUsername={setUsername}
-          email={email}
-          setEmail={setEmail}
-          password={password}
-          setPassword={setPassword}
-          confirmPassword={confirmPassword}
-          setConfirmPassword={setConfirmPassword}
-        />
-        <TermsAndConditions
-          agreeToTerms={agreeToTerms}
-          setAgreeToTerms={() => setAgreeToTerms(!agreeToTerms)}
-        />
-        <Button onPress={() => {}} title="Sign Up" />
-        <SignUpBottom />
-      </Box>
+      <ScrollView>
+        <SignUpTop />
+        <Box alignItems="center" paddingY={12}>
+          <SignUpInputs
+            username={username}
+            setUsername={setUsername}
+            email={email}
+            setEmail={setEmail}
+            password={password}
+            setPassword={setPassword}
+            confirmPassword={confirmPassword}
+            setConfirmPassword={setConfirmPassword}
+          />
+          <TermsAndConditions
+            agreeToTerms={agreeToTerms}
+            setAgreeToTerms={() => setAgreeToTerms(!agreeToTerms)}
+          />
+          <Button onPress={() => {}} title="Sign Up" />
+          <SignUpBottom />
+        </Box>
+      </ScrollView>
     </Box>
   );
 };

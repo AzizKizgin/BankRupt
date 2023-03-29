@@ -1,13 +1,18 @@
 import React from 'react';
-import {Box, Text} from 'native-base';
+import {Box, ScrollView, Text} from 'native-base';
 import AccountInfo from '../components/Home/AccountInfo';
 import LatestTransactions from '../components/Home/LatestTransactions';
 
 const Home = () => {
   return (
     <Box backgroundColor="white" flex={1}>
-      <AccountInfo />
-      <LatestTransactions />
+      <ScrollView
+        contentContainerStyle={{
+          paddingBottom: 20,
+        }}>
+        <AccountInfo />
+        <LatestTransactions />
+      </ScrollView>
     </Box>
   );
 };

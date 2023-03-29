@@ -14,7 +14,7 @@ const LatestTransactions = () => {
   };
   return (
     <Box paddingX={6} flex={1}>
-      <Center marginTop={4}>
+      <Center marginTop={6}>
         <Text fontSize="lg" fontWeight="bold" color="cyan.600">
           {strings.latestTransactions}
         </Text>

@@ -2,10 +2,11 @@ import React from 'react';
 import {Box, Text, VStack} from 'native-base';
 import HomeAccountIcon from './HomeAccountIcon';
 import BalanceBox from './BalanceBox';
+import {screenHeight} from '../../utils/consts';
 
 const AccountInfo = () => {
   return (
-    <Box variant={'screenTop'} height={'1/2'}>
+    <Box variant={'screenTop'} paddingY={6}>
       <VStack space={2} alignItems="center" justifyContent="center">
         <HomeAccountIcon />
         <VStack>

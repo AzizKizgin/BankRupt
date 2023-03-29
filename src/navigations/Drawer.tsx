@@ -8,7 +8,6 @@ import {
   Transaction,
   TransactionHistory,
   Payment,
-  Excange,
 } from '../screens';
 import AppDrawer from './AppDrawer';
 import {Icon, theme} from 'native-base';
@@ -70,9 +69,6 @@ const Drawer = () => {
             case 'Payment':
               iconName = focused ? 'wallet' : 'wallet-outline';
               break;
-            case 'Excange':
-              iconName = focused ? 'repeat' : 'repeat-outline';
-              break;
           }
           return <Icon as={Ionicons} name={iconName} size={23} color={color} />;
         },
@@ -87,7 +83,6 @@ const Drawer = () => {
         component={TransactionHistory}
       />
       <Drawer.Screen name="Payment" component={Payment} />
-      <Drawer.Screen name="Excange" component={Excange} />
     </Drawer.Navigator>
   );
 };
